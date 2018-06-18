@@ -42,8 +42,8 @@ app.get('/profile/:id', (req, res) => {profile.handleProfileGet(req, res, db)})
 app.put('/image', (req, res) => {image.handleImage(req, res, db)})
 
 //Setting Up Port
-app.listen(3000, () => {
-	console.log('App is up and running, Port 3000');
+app.listen(process.env.PORT || 3000, () => {
+	console.log(`App is up and running on ${process.env.PORT`});
 })
 
 /*

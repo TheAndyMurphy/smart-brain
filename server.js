@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 
 //Getting a response
 app.get('/', (req, res) =>{
-	res.send(database.users); 
+	res.send('it is working'); 
 })
 
 //Signing In with Post - Linking to Post.js and passing requirements
